@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['mfn-trading-ed8bd2465e4a.herokuapp.com', '127.0.0.1']
 
-#   UPDATED!!!!!!!!!!!!!
 # Application definition
 
 INSTALLED_APPS = [
