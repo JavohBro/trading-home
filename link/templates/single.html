@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -5,9 +6,9 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>MFN Trading</title>
-      <link rel="shortcut icon" type="icon/png" href="static/mfn_trading9.png">
+      <link rel="shortcut icon" type="icon/png" href="{%static 'mfn_trading9.png'%}">
 
-      <link rel="stylesheet" href="static/main.css" />
+      <link rel="stylesheet" href="{%static 'main.css'%}" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -19,17 +20,17 @@
     <body class="basic-staggering-demo line-drawing-demo">
       <div class="range-value-staggering-demo">
         <div class="tradingview el">
-            <img src="static/tradingview.png" alt="MFN Trading">
+            <img src="{%static 'tradingview.png'%}" alt="MFN Trading">
         </div>  
         <div class="quotex el">
-            <img src="static/quotex.png" alt="MFN Trading">
+            <img src="{%static 'quotex.png'%}" alt="MFN Trading">
         </div>  
         <div class="binance el">
-            <img src="static/Binance.png" alt="MFN Trading">
+            <img src="{%static 'Binance.png'%}" alt="MFN Trading">
         </div>
       </div>
     <div class="logo">
-      <img src="static/mfn_trading8.jpg" alt="MFN Trading">
+      <img src="{% static 'mfn_trading8.jpg'%}" alt="MFN Trading">
     </div>
     <svg viewBox="0 0 80 20" class="MFN">
      <!-- Letter M -->
@@ -71,7 +72,7 @@
       </div>
     </a>
     <div class="bgpic">
-        <img src="static/trend2.jpg" alt="MFN Trading">
+        <img src="{%static 'trend2.jpg'%}" alt="MFN Trading">
     </div>
   <script>
     anime.timeline({
