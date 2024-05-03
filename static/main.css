@@ -101,6 +101,7 @@
     position: absolute;
     animation-name: icons;
     animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
 .tradingview img {
@@ -116,6 +117,9 @@
     margin-left: 75%;
     rotate: 20deg;
     position: absolute;
+    animation-name: icons3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .quotex img {
@@ -126,11 +130,12 @@
 
 .binance {
     width: 23%;
-    /* height: 8vh; */
     margin-top: 30%;
-    /* margin-left: 2vh; */
     rotate: 10deg;
     position: absolute;
+    animation-name: icons2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .binance img {
@@ -147,7 +152,7 @@
     }
 
     20%{
-        margin-top: 12%;
+        margin-top: 11%;
         rotate: -28deg;
         margin-left: -1%;
     }
@@ -163,13 +168,7 @@
         rotate: -29deg;
     }
 
-    80% {
-        margin-top: 11%;
-        rotate: -33deg;
-        margin-left: -2%;
-    }
-
-    90%{
+    83%{
         margin-top: 8%;
         rotate: -31deg;
         margin-left: -3%;
@@ -179,6 +178,68 @@
         margin-top: 10%;
         rotate: -30deg;
         margin-left: -4%;
+    }
+}
+
+@keyframes icons2 {
+    0% {
+        margin-top: 30%;
+        rotate: 10deg;
+    }
+
+    25% {
+        margin-top: 32%;
+        rotate: 11deg;
+        margin-left: -1%;
+    }
+
+    50% {
+        margin-top: 31%;
+        rotate: 9deg;
+        margin-left: -2%;
+    }
+
+    85% {
+        margin-top: 29%;
+        rotate: 11deg;
+        margin-left: -1%;
+    }
+
+    100% {
+        margin-top: 30%;
+        rotate: 10deg;
+    }
+}
+
+@keyframes icons3 {
+    0% {
+        margin-top: 20%;
+        margin-left: 75%;
+        rotate: 20deg;
+    }
+
+    25% {
+        margin-top: 21%;
+        margin-left: 76%;
+        rotate: 28deg;
+    }
+
+    50% {
+        margin-top: 19%;
+        rotate: 25deg;
+        margin-left: 74%;
+    }
+
+    85% {
+        margin-top: 20%;
+        rotate: 22deg;
+        margin-left: 73%;
+    }
+
+    100% {
+        margin-top: 20%;
+        margin-left: 75%;
+        rotate: 20deg;
     }
 }
 
@@ -213,10 +274,44 @@
 
     .binance {
         width: 23%;
-        /* height: 8vh; */
         margin-top: 27vh;
         margin-left: -2vh;
         rotate: 10deg;
         position: absolute;
+        animation-name: icons4;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes icons4 {
+        0% {
+            margin-top: 27vh;
+            margin-left: -2vh;
+            rotate: 10deg;
+        }
+
+        25% {
+            margin-top: 28vh;
+            rotate: 11deg;
+            margin-left: -1vh;
+        }
+
+        50% {
+            margin-top: 27vh;
+            rotate: 9deg;
+            margin-left: 0;
+        }
+
+        85% {
+            margin-top: 26vh;
+            rotate: 11deg;
+            margin-left: 1vh;
+        }
+
+        100% {
+            margin-top: 27vh;
+            margin-left: -2vh;
+            rotate: 10deg;
+        }
     }
 }
