@@ -6,9 +6,7 @@
 .MFN{
     margin-left: 25%;
     width: 50%;
-    /* height: 80px;  */
-    /* 200px */
-    /* border: 1px solid red; */
+    margin-top: 20px;
 }
 .button{
     text-decoration: none;
@@ -95,11 +93,12 @@
 
 .tradingview{
     width: 23%;
-    /* height: 5%; */
     margin-top: 10%;
     rotate: -30deg;
     margin-left: -4%;
     position: absolute;
+    animation-name: icons;
+    animation-duration: 7s;
 }
 .tradingview img{
     width: 100%;
@@ -138,7 +137,26 @@
 }
 
 @keyframes icons{
-
+    0%{
+        margin-top: 10%;
+        rotate: -30deg;
+        margin-left: -4%;
+    }
+    36%{
+        margin-top: 15%;
+        rotate: -25deg;
+        /* margin-left: -4%; */
+    }
+    73%{
+        margin-top: 10%;
+        rotate: -33deg;
+        margin-left: -2%;
+    }
+    100%{
+        margin-top: 10%;
+        rotate: -30deg;
+        margin-left: -4%;
+    }
 }
 
 @media only screen  and (max-width: 900px){    
