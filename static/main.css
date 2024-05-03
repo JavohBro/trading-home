@@ -1,16 +1,15 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-.MFN{
+.MFN {
     margin-left: 25%;
     width: 50%;
-    /* height: 80px;  */
-    /* 200px */
-    /* border: 1px solid red; */
+    margin-top: 20px;
 }
-.button{
+
+.button {
     text-decoration: none;
     color: black;
     /* margin-left: 15%; */
@@ -39,6 +38,7 @@
     width: 70%;
     border-bottom: 2px solid #808080;
 }
+
 .orbitron-number {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -50,7 +50,7 @@
     width: 70%;
 }
 
-.text{
+.text {
     margin-bottom: 2px;
 }
 
@@ -93,15 +93,17 @@
     width: 70%;
 }
 
-.tradingview{
+.tradingview {
     width: 23%;
-    /* height: 5%; */
     margin-top: 10%;
     rotate: -30deg;
     margin-left: -4%;
     position: absolute;
+    animation-name: icons;
+    animation-duration: 7s;
 }
-.tradingview img{
+
+.tradingview img {
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -137,14 +139,36 @@
     background-size: contain;
 }
 
-@keyframes icons{
+@keyframes icons {
+    0% {
+        margin-top: 10%;
+        rotate: -30deg;
+        margin-left: -4%;
+    }
 
+    36% {
+        margin-top: 15%;
+        rotate: -25deg;
+        /* margin-left: -4%; */
+    }
+
+    73% {
+        margin-top: 10%;
+        rotate: -33deg;
+        margin-left: -2%;
+    }
+
+    100% {
+        margin-top: 10%;
+        rotate: -30deg;
+        margin-left: -4%;
+    }
 }
 
-@media only screen  and (max-width: 900px){    
-    .logo img{
+@media only screen and (max-width: 900px) {
+    .logo img {
         width: 100%;
-        height: 100% ;
+        height: 100%;
         background-size: contain;
         margin-left: 0%;
     }
@@ -152,11 +176,11 @@
     .logo {
         margin-left: 25%;
         width: 50%;
-        height: 23vh; 
+        height: 23vh;
         /* 200px */
         /* border: 1px solid red; */
     }
-    
+
     .orbitron-logo {
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
@@ -169,6 +193,7 @@
         color: black;
         width: 70%;
     }
+
     .binance {
         width: 23%;
         /* height: 8vh; */
